@@ -1,0 +1,191 @@
+.header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:250px;
+    background-color:#1f89ed;
+}
+.heading{
+    position:absolute;
+    left:28%;
+    font-size:35px;
+    color:white;
+}
+.heading input{
+    margin-left:90px;
+    width:70%;
+    height:30px;
+    font-size:15px;
+    padding-left:20px;
+    border-radius:10px;
+    border:2px solid #1f89ed;
+}
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+.submit{
+    position:absolute;
+    top:49%;
+    left:58.5%;
+    height:28px;
+    width:70px;
+    background-color: #1f89ed;
+    border-radius:10px;
+    border:none;
+    color:white;
+}
+#delete, #complete{
+    display:none;
+}
+ul{
+    position:absolute;
+    left:30%;
+    top:300px;
+    width:60%;
+}
+li{
+    list-style:none;
+}
+.todoItems{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    height:50px;
+}
+.todo:nth-child(1){display:none;}
+.todo{
+    display:flex;
+    width:50%;
+    margin:10px;
+    height:47px;
+    border:3px solid #1f89ed;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:10px;
+}
+.todo li {
+    flex:1;
+}
+.done, .deletebtn{
+    color:white;
+    padding:1rem;
+    border:none;
+    cursor:pointer;
+}
+.done {
+    background:#22ce5b;
+}
+.deletebtn{
+    background:#d44d4d;
+}
+.fa-trash, .fa-check{
+    pointer-events:none;
+}
+
+.completed{
+    background:#22ce5b;
+    transition:2s;
+    border:none;
+    color:white;
+}
+.completed .deletebtn{
+  display:none;
+}
+.deleteanimation{
+    transform: translateX(50rem) rotateZ(35deg);
+    opacity:0;
+    transition:3s;
+}
+.msgsuccessful{
+    position: absolute;
+    top:20px;
+    left:82%;
+    width:15%;
+    height:40px;
+    font-size:15px;
+    background:#22ce5b;
+    color:white;
+    text-align: center;
+    padding-top:20px;
+}
+.wrongsuccessful{
+    position: absolute;
+    top:-300px;
+    left:70%;
+    width:25%;
+    height:40px;
+    font-size:15px;
+    background:#d44d4d;
+    color:white;
+    text-align: center;
+    padding-top:20px;
+}
+.close{
+    background:blue;
+    width:20px;
+    height:20px;
+    position: absolute;
+    right:5px;
+    border:none;
+    top:6px;
+}
+
+.msg{
+    background:red;
+    color:white;
+    position: absolute;
+    top:164px;
+    left:40%;
+    height:50px;
+    width:150px;
+    visibility:none;
+    opacity:0;
+    border-radius:10px;
+}
+.msgpop{
+    background:red;
+    color:white;
+    position: absolute;
+    top:164px;
+    left:40%;
+    height:50px;
+    width:150px;
+    visibility:none;
+    animation:msg 7s ease ;
+    border-radius:10px;
+}
+@keyframes msg{
+    0%{opacity:0}
+    70%{opacity:1}
+    100%{opacity:0}
+}
+.error{
+    padding-top:5px;
+    padding-left:5px;
+    font-size:12px;
+}
+
+.msgreen{
+    background:#22ce5b;
+    color:white;
+    position: absolute;
+    top:-100px;
+    left:80%;
+    padding-top:20px;
+    padding-left:5px;
+    height:40px;
+    width:150px;
+    border-radius:10px;
+}
+.msgreen1{
+    
+    animation:msgreen 5s  ;
+}
+@keyframes msgreen{
+    
+    0%{ top:-100px;}
+    50%{top:20px;}
+    100%{top:-100px;}
+}
